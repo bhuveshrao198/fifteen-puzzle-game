@@ -1,0 +1,118 @@
+body {
+  font-family: cursive;
+}
+.game_main_container {
+  .wrap {
+    flex-wrap: wrap !important;
+  }
+  .d-flex {
+    display: flex;
+  }
+  .center {
+    justify-content: center;
+  }
+  .align-center {
+    align-items: center;
+  }
+  .mt-10 {
+    margin-top: 10px;
+  }
+  .mt-40 {
+    margin-top: 40px;
+  }
+  .centroid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .direction {
+    flex-direction: column;
+  }
+  .gap-10 {
+    gap: 10px;
+  }
+  .gap-40 {
+    gap: 40px;
+  }
+  .inline {
+    display: inline;
+  }
+  .row-gap-20 {
+    row-gap: 20px;
+  }
+  .space-between {
+    justify-content: space-between;
+  }
+  .primary_btn {
+    width: 110px;
+    height: 40px;
+    background-color: rgba(18, 73, 7, 0.17);
+    border-radius: 5px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15pt;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .moves_left {
+    width: 110px;
+    border-radius: 5px;
+    background-color: rgba(158, 170, 255, 0.37);
+    padding: 10px;
+    box-sizing: border-box;
+
+    .text {
+      display: block;
+      text-align: center;
+      padding-top: 7px;
+      font-weight: bold;
+      font-size: 16pt;
+    }
+  }
+  .heading {
+    font-size: 40pt;
+    display: block;
+    float: right;
+    padding-right: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 5px;
+    background-color: #a8cbaf;
+    padding: 10px;
+    border-radius: 12px;
+    width: min-content;
+    box-sizing: border-box;
+    @media screen and (max-width: 767px) {
+      grid-template-columns: repeat(4, 71px) !important;
+      grid-template-rows: repeat(4, 71px) !important;
+    }
+  }
+  .tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffa5;
+    font-size: 20px;
+    border-radius: 8px !important;
+  }
+  .empty {
+    visibility: hidden;
+  }
+  .tile_content {
+    background-color: #96b69d !important;
+  }
+}
